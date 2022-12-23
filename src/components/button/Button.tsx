@@ -5,7 +5,7 @@ import './Button.scss';
 
 interface ButtonProps {
   children?: JSX.Element | string;
-  onClick: (e: React.MouseEvent) => void;
+  onClick?: (e: React.MouseEvent) => void;
   className?: string;
   disabled?: boolean;
   active?: boolean;
@@ -24,7 +24,7 @@ const Button = ({
   const onClickAction = (e: React.MouseEvent) => {
     if (disabled) {
       e.preventDefault();
-    } else {
+    } else if (onClick) {
       onClick(e);
     }
   };
