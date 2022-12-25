@@ -8,6 +8,7 @@ import App from './App';
 import Home from './layout/home/home';
 import ButtonSandbox from './components/button/Sandbox';
 import ButtonGroupSandbox from './components/button-group/Sandbox';
+import IconSandbox from './components/icon/Sandbox';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -18,6 +19,7 @@ root.render(
         <Route path='/' element={Home} />
         <Route path='/button' element={<ButtonSandbox />} />
         <Route path='/button-group' element={<ButtonGroupSandbox />} />
+        <Route path='/icon' element={<IconSandbox />} />
       </Routes>
     </App>
   </BrowserRouter>,
