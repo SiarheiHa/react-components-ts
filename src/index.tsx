@@ -11,6 +11,7 @@ import ButtonGroupSandbox from './components/button-group/Sandbox';
 import IconSandbox from './components/icon/Sandbox';
 import ImageSandbox from './components/image/Sandbox';
 import ChipSandbox from './components/chip/Sandbox';
+import BadgeSandbox from './components/badge/Sandbox';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -24,6 +25,7 @@ root.render(
         <Route path='/icon' element={<IconSandbox />} />
         <Route path='/image' element={<ImageSandbox />} />
         <Route path='/chip' element={<ChipSandbox />} />
+        <Route path='/badge' element={<BadgeSandbox />} />
       </Routes>
     </App>
   </BrowserRouter>,

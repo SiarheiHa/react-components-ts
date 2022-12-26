@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import './Button.scss';
 
 interface ButtonProps {
-  children?: JSX.Element | string;
+  children?: JSX.Element | JSX.Element[] | string;
   onClick?: (e: React.MouseEvent) => void;
   className?: string;
   disabled?: boolean;

@@ -9,6 +9,7 @@ const routes = {
   '/icon': 'Icon',
   '/image': 'Image',
   '/chip': 'Chip',
+  '/badge': 'Badge',
 };
 
 const Navigation = () => (
