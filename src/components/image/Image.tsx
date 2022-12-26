@@ -14,29 +14,20 @@ interface ImageProps {
 
 const Image = ({
   src,
-  alt,
+  alt = 'image',
   className,
-  width,
-  height,
+  width = 100,
+  height = 100,
   circle,
   ...attrs
 }: ImageProps & React.ComponentPropsWithoutRef<'img'>) => {
   const classes = classNames(className, { circle });
 
   if (!src) {
-    src = `https://via.placeholder.com/${width || 100}x${height || 100}`;
+    src = `https://via.placeholder.com/${width}x${height}`;
   }
 
-  return (
-    <img
-      src={src}
-      alt={alt || 'image'}
-      className={classes}
-      width={width || 100}
-      height={height || 100}
-      {...attrs}
-    />
-  );
+  return <img src={src} alt={alt} className={classes} width={width} height={height} {...attrs} />;
 };
 
 export default Image;

@@ -12,7 +12,7 @@ interface ButtonProps {
 }
 
 const Button = ({
-  children,
+  children = 'button',
   onClick,
   className,
   disabled,
@@ -35,7 +35,7 @@ const Button = ({
 
   return (
     <Tag className={classes} disabled={disabled} onClick={onClickAction} {...attrs}>
-      {children || 'button'}
+      {children}
     </Tag>
   );
 };
