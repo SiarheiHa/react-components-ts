@@ -2,6 +2,14 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './navigation.css';
 
+const routes = {
+  '/': 'Home',
+  '/button': 'Button',
+  '/button-group': 'Button Group',
+  '/icon': 'Icon',
+  '/image': 'Image',
+};
+
 const Navigation = () => (
   <div className='navigation'>
     <div className='logoWrapper'>
@@ -13,18 +21,11 @@ const Navigation = () => (
     </div>
     <nav>
       <ul className='nav'>
-        <li>
-          <NavLink to='/'>Home</NavLink>
-        </li>
-        <li>
-          <NavLink to='/button'>Button</NavLink>
-        </li>
-        <li>
-          <NavLink to='/button-group'>Button Group</NavLink>
-        </li>
-        <li>
-          <NavLink to='/icon'>Icon</NavLink>
-        </li>
+        {Object.entries(routes).map((route) => (
+          <li key={route[0]}>
+            <NavLink to={route[0]}>{route[1]}</NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   </div>
