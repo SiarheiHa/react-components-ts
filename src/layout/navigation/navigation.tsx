@@ -8,6 +8,7 @@ const routes = {
   '/button-group': 'Button Group',
   '/icon': 'Icon',
   '/image': 'Image',
+  '/chip': 'Chip',
 };
 
 const Navigation = () => (
