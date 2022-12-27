@@ -10,6 +10,7 @@ const routes = {
   '/image': 'Image',
   '/chip': 'Chip',
   '/badge': 'Badge',
+  '/list-group': 'List Group',
 };
 
 const Navigation = () => (
