@@ -11,6 +11,7 @@ const routes = {
   '/chip': 'Chip',
   '/badge': 'Badge',
   '/list-group': 'List Group',
+  '/input': 'Input',
 };
 
 const Navigation = () => (
