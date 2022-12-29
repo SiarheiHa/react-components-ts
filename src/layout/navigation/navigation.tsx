@@ -12,6 +12,7 @@ const routes = {
   '/badge': 'Badge',
   '/list-group': 'List Group',
   '/input': 'Input',
+  '/tabbar': 'Tabbar',
 };
 
 const Navigation = () => (
