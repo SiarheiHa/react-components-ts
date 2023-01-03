@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import './Button.scss';
+import './Button.css';
 
 interface ButtonProps {
   children?: JSX.Element | JSX.Element[] | string;
@@ -9,6 +9,7 @@ interface ButtonProps {
   className?: string;
   disabled?: boolean;
   active?: boolean;
+  invert?: boolean;
 }
 
 const Button = ({
@@ -17,6 +18,7 @@ const Button = ({
   className,
   disabled,
   active,
+  invert,
   ...attrs
 }: ButtonProps &
   React.ComponentPropsWithoutRef<'a'> &
@@ -29,7 +31,7 @@ const Button = ({
     }
   };
 
-  const classes = classNames('btn', className, { active });
+  const classes = classNames('btn', className, { active }, { invert });
 
   const Tag = attrs.href ? 'a' : 'button';
 

@@ -14,6 +14,7 @@ const routes = {
   '/input': 'Input',
   '/tabbar': 'Tabbar',
   '/tooltip': 'Toltip',
+  '/modal': 'Modal',
 };
 
 const Navigation = () => (
