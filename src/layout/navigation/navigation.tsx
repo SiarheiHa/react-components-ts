@@ -13,6 +13,7 @@ const routes = {
   '/list-group': 'List Group',
   '/input': 'Input',
   '/tabbar': 'Tabbar',
+  '/tooltip': 'Toltip',
 };
 
 const Navigation = () => (

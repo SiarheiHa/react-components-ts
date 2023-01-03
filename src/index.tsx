@@ -15,6 +15,7 @@ import BadgeSandbox from './components/badge/Sandbox';
 import ListGroupSandbox from './components/list-group/Sandbox';
 import InputSandbox from './components/input/Sandbox';
 import TabbarSandbox from './components/tabbar/Sandbox';
+import TooltipSandbox from './components/tooltip/Sandbox';
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 
@@ -32,6 +33,7 @@ root.render(
         <Route path='/list-group' element={<ListGroupSandbox />} />
         <Route path='/input' element={<InputSandbox />} />
         <Route path='/tabbar' element={<TabbarSandbox />} />
+        <Route path='/tooltip' element={<TooltipSandbox />} />
       </Routes>
     </App>
   </BrowserRouter>,
